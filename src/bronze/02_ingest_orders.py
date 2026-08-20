@@ -10,11 +10,21 @@ from pyspark.sql import functions as F
 
 def get_spark_session(app_name="Bronze_Ingest_Orders"):
     try:
+        from IPython import get_ipython
+        ipy = get_ipython()
+        if ipy and "spark" in ipy.user_ns:
+            return ipy.user_ns["spark"]
+    except Exception:
+        pass
+    try:
         active = SparkSession.getActiveSession()
         if active:
             return active
     except Exception:
         pass
+    for k in list(os.environ.keys()):
+        if "SPARK_REMOTE" in k or "SPARK_CONNECT" in k or "REMOTE" in k:
+            os.environ.pop(k, None)
     try:
         from databricks.connect import DatabricksSession
         return DatabricksSession.builder.appName(app_name).getOrCreate()
