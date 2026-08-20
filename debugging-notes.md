@@ -19,3 +19,8 @@
 - **Symptom:** `SyntaxError: invalid decimal literal` when executing `create_silver_tables.py` and `ingest_all.py`.
 - **Root Cause:** Python parser treats module names starting with numbers (e.g. `01_ingest_customers.py`) as numeric literals in standard `from 01_... import ...` statements.
 - **Resolution:** Leveraged `importlib.import_module("01_ingest_customers")` to dynamically import numeric-prefixed modules, preserving exact required repository file naming conventions while ensuring 100% valid Python syntax.
+
+## Incident 5: Spark Connect / Databricks Master Configuration Conflict
+- **Symptom:** `PySparkRuntimeError: [CANNOT_CONFIGURE_SPARK_CONNECT_MASTER] Spark Connect server and Spark master cannot be configured together` when executing PySpark scripts in Databricks.
+- **Root Cause:** Hardcoding `.master("local[*]")` on `SparkSession.builder` conflicted with Databricks pre-configured Spark Connect socket / active Spark session.
+- **Resolution:** Refactored `get_spark_session()` across all PySpark modules to check `SparkSession.getActiveSession()` first, and dynamically omit `.master("local[*]")` when running inside Databricks (`"DATABRICKS_RUNTIME_VERSION" in os.environ`).

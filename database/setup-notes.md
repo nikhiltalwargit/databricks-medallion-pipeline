@@ -13,10 +13,11 @@
    %sql
    RUN FILE "./database/schema.sql";
    ```
-5. Run the medallion orchestrator python scripts:
-   - `%run ./src/bronze/ingest_all.py`
-   - `%run ./src/silver/create_silver_tables.py`
-   - `%run ./src/gold/create_gold_tables.py`
+5. Execute the medallion pipeline scripts step-by-step using notebook cells:
+   - **Cell 1 (Data Generation):** `!python ./src/data_generation/generate_sample_data.py`
+   - **Cell 2 (Bronze Ingestion):** `!python ./src/bronze/ingest_all.py`
+   - **Cell 3 (Silver DQ Validation):** `!python ./src/silver/create_silver_tables.py`
+   - **Cell 4 (Gold Aggregations):** `!python ./src/gold/create_gold_tables.py`
 
 ## Option B: Standalone Local PySpark Execution
 1. Clone repository locally.

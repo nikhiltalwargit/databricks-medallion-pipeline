@@ -34,9 +34,12 @@ venv/
 env/
 ENV/
 
-# Databricks & Spark Temporary Logs / Checkpoints
+# Databricks & Spark Temporary Logs / Local Warehouse Data
 checkpoint/
 spark-warehouse/
+data/warehouse/
+*.parquet
+*.crc
 derby.log
 metastore_db/
 .databricks/

@@ -119,11 +119,11 @@ databricks-medallion-pipeline/
    ```sql
    RUN FILE "./database/schema.sql";
    ```
-4. Run the orchestrator scripts via Databricks Workflows or Notebooks:
-   - `%run ./src/data_generation/generate_sample_data.py`
-   - `%run ./src/bronze/ingest_all.py`
-   - `%run ./src/silver/create_silver_tables.py`
-   - `%run ./src/gold/create_gold_tables.py`
+4. Execute the medallion pipeline scripts step-by-step using notebook cells:
+   - **Cell 1 (Data Generation):** `!python ./src/data_generation/generate_sample_data.py`
+   - **Cell 2 (Bronze Ingestion):** `!python ./src/bronze/ingest_all.py`
+   - **Cell 3 (Silver DQ Validation):** `!python ./src/silver/create_silver_tables.py`
+   - **Cell 4 (Gold Aggregations):** `!python ./src/gold/create_gold_tables.py`
 
 ### Option 2: Local PySpark Execution
 1. Clone repository and install dependencies:

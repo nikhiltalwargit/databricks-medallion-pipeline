@@ -111,11 +111,17 @@ def run_gold_pipeline(spark, data_dir, warehouse_dir):
     
     return df_gold_product, df_gold_customer, df_gold_segmentation
 
+def get_spark_session(app_name="Gold_Pipeline_Orchestrator"):
+    active = SparkSession.getActiveSession()
+    if active:
+        return active
+    builder = SparkSession.builder.appName(app_name)
+    if "DATABRICKS_RUNTIME_VERSION" not in os.environ:
+        builder = builder.master("local[*]")
+    return builder.getOrCreate()
+
 if __name__ == "__main__":
-    spark = (SparkSession.builder
-             .appName("Gold_Pipeline_Orchestrator")
-             .master("local[*]")
-             .getOrCreate())
+    spark = get_spark_session("Gold_Pipeline_Orchestrator")
     
     root_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../")
     data_dir = os.path.join(root_dir, "data")

@@ -8,11 +8,14 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType, DecimalType
 from pyspark.sql import functions as F
 
-def get_spark_session():
-    return (SparkSession.builder
-            .appName("Bronze_Ingest_Products")
-            .master("local[*]")
-            .getOrCreate())
+def get_spark_session(app_name="Bronze_Ingest_Products"):
+    active = SparkSession.getActiveSession()
+    if active:
+        return active
+    builder = SparkSession.builder.appName(app_name)
+    if "DATABRICKS_RUNTIME_VERSION" not in os.environ:
+        builder = builder.master("local[*]")
+    return builder.getOrCreate()
 
 PRODUCT_SCHEMA = StructType([
     StructField("product_id", IntegerType(), True),
