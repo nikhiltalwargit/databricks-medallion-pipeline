@@ -13,6 +13,8 @@ def get_spark_session(app_name="Bronze_Ingest_Customers"):
     active = SparkSession.getActiveSession()
     if active:
         return active
+    if "SPARK_REMOTE" in os.environ and not os.environ["SPARK_REMOTE"].startswith("sc://"):
+        os.environ.pop("SPARK_REMOTE", None)
     builder = SparkSession.builder.appName(app_name)
     if "DATABRICKS_RUNTIME_VERSION" not in os.environ:
         builder = builder.master("local[*]")
