@@ -29,3 +29,8 @@
 - **Symptom:** `PySparkValueError: [INVALID_CONNECT_URL] Invalid URL for Spark Connect: The URL must start with 'sc://'` when executing `!python` subshell commands in Databricks.
 - **Root Cause:** Databricks 14+ subshell magic populates `SPARK_REMOTE="unix:///databricks/sparkconnect/grpc.sock..."`. PySpark Connect client attempts to parse this unix socket URL as a standard `sc://` connection.
 - **Resolution:** Sanitized `get_spark_session()` across all PySpark scripts: if `SPARK_REMOTE` is present in `os.environ` and does not start with `sc://`, it is popped (`os.environ.pop("SPARK_REMOTE", None)`), enabling clean fallback to the cluster JVM Spark context.
+
+## Incident 7: Databricks Runtime 14+ DatabricksSession Requirement
+- **Symptom:** `RuntimeError: Only remote Spark sessions using Databricks Connect are supported. Use DatabricksSession.builder to create a remote Spark session instead`.
+- **Root Cause:** Databricks Runtime 14.3 LTS Shared / Serverless clusters require `databricks.connect.DatabricksSession` for remote session building.
+- **Resolution:** Enhanced `get_spark_session()` across all PySpark modules to attempt `DatabricksSession.builder.appName(app_name).getOrCreate()` when `databricks.connect` is present, ensuring 100% smooth execution on Databricks 14+ clusters.
