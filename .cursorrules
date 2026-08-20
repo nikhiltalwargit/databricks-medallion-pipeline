@@ -1,0 +1,18 @@
+# Token-Optimized Cursor Rules for Databricks Medallion Data Pipelines
+
+# Core Principles
+- Always generate clean, modular PySpark & SQL code targetting Databricks Runtime (Delta Lake).
+- Keep code concise, explicit, and strongly typed. Avoid redundant docstrings or excessive boilerplate to optimize token usage.
+- Prefer PySpark DataFrame API for Bronze/Silver and Spark SQL for Gold aggregations.
+
+# Databricks & Delta Lake Standards
+- Bronze: Raw ingestion into Delta. Always append ingestion metadata (`_ingested_at`, `_source_file`).
+- Silver: Append `quality_check_result` (STRUCT/JSON) and `is_valid` (BOOLEAN). Never drop raw records in Silver.
+- Gold: Query only `is_valid = True` records from Silver. Materialize as Delta tables.
+- Use `dbutils.widgets` or standard `spark.sql` parameters for configurable paths.
+
+# Code & Style Guidelines
+- PySpark: Use `F.col`, `F.when`, `F.coalesce`, `F.to_date`, `F.count`, `F.sum`.
+- Standard column naming: snake_case (`customer_id`, `order_status`, `total_amount`).
+- Include brief inline comments explaining non-trivial business logic or DQ rules.
+- Testability: Keep data transformations in pure functions `transform_df(df)` so they can be unit-tested with PyTest.

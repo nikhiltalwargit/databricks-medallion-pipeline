@@ -1,0 +1,501 @@
+product_id,product_name,category,price,cost,stock_quantity,reorder_level
+1,Clothing Item #1,Clothing,213.38,114.68,102,14
+2,Electronics Item #2,Electronics,907.61,399.87,143,26
+3,Beauty & Care Item #3,Beauty & Care,1059.01,502.37,330,11
+4,Clothing Item #4,Clothing,1113.8,843.95,96,28
+5,Home & Kitchen Item #5,Home & Kitchen,1499.83,987.91,23,41
+6,Home & Kitchen Item #6,Home & Kitchen,167.81,126.46,301,30
+7,Home & Kitchen Item #7,Home & Kitchen,398.87,184.96,365,25
+8,Electronics Item #8,Electronics,672.52,373.78,222,50
+9,Sports & Outdoors Item #9,Sports & Outdoors,845.14,480.65,444,43
+10,Home & Kitchen Item #10,Home & Kitchen,48.91,31.29,458,16
+11,Books Item #11,Books,229.8,177.19,424,35
+12,Home & Kitchen Item #12,Home & Kitchen,1017.88,607.08,40,47
+13,Beauty & Care Item #13,Beauty & Care,295.48,224.48,156,49
+14,Clothing Item #14,Clothing,1284.21,721.9,163,20
+15,Toys & Games Item #15,Toys & Games,274.23,164.58,197,38
+16,Sports & Outdoors Item #16,Sports & Outdoors,936.64,544.3,317,47
+17,Sports & Outdoors Item #17,Sports & Outdoors,1221.82,499.16,316,41
+18,Beauty & Care Item #18,Beauty & Care,1115.33,496.84,299,13
+19,Clothing Item #19,Clothing,1184.37,697.55,40,21
+20,Home & Kitchen Item #20,Home & Kitchen,871.96,521.41,346,11
+21,Clothing Item #21,Clothing,992.77,497.94,286,44
+22,Electronics Item #22,Electronics,1316.12,729.13,282,38
+23,Books Item #23,Books,776.97,478.28,23,17
+24,Sports & Outdoors Item #24,Sports & Outdoors,159.74,105.07,245,35
+25,Sports & Outdoors Item #25,Sports & Outdoors,1183.74,632.75,353,39
+26,Beauty & Care Item #26,Beauty & Care,754.36,324.63,364,37
+27,Beauty & Care Item #27,Beauty & Care,1249.89,670.38,383,21
+28,Clothing Item #28,Clothing,1484.92,936.98,338,8
+29,Clothing Item #29,Clothing,856.88,651.94,384,36
+30,Clothing Item #30,Clothing,355.71,215.39,453,6
+31,Home & Kitchen Item #31,Home & Kitchen,1358.1,682.41,498,17
+32,Clothing Item #32,Clothing,982.89,747.35,365,31
+33,Beauty & Care Item #33,Beauty & Care,1031.84,800.88,464,24
+34,Beauty & Care Item #34,Beauty & Care,458.19,327.17,431,21
+35,Toys & Games Item #35,Toys & Games,208.62,100.58,82,5
+36,Electronics Item #36,Electronics,1341.56,910.4,359,40
+37,Books Item #37,Books,552.76,304.05,366,49
+38,Clothing Item #38,Clothing,1408.7,709.72,258,38
+39,Electronics Item #39,Electronics,927.08,481.48,95,10
+40,Electronics Item #40,Electronics,1349.77,776.37,154,30
+41,Books Item #41,Books,479.12,363.69,122,15
+42,Beauty & Care Item #42,Beauty & Care,481.89,329.28,138,11
+43,Home & Kitchen Item #43,Home & Kitchen,1325.06,567.12,485,17
+44,Toys & Games Item #44,Toys & Games,138.43,70.87,86,12
+45,Beauty & Care Item #45,Beauty & Care,875.98,550.97,88,21
+46,Books Item #46,Books,1217.36,827.94,68,34
+47,Home & Kitchen Item #47,Home & Kitchen,82.28,43.69,374,18
+48,Beauty & Care Item #48,Beauty & Care,65.77,46.54,475,29
+49,Sports & Outdoors Item #49,Sports & Outdoors,1478.63,664.66,239,14
+50,Books Item #50,Books,323.38,136.57,299,36
+51,Toys & Games Item #51,Toys & Games,501.28,223.96,406,16
+52,Books Item #52,Books,298.96,204.48,477,47
+53,Electronics Item #53,Electronics,1207.9,885.8,485,8
+54,Sports & Outdoors Item #54,Sports & Outdoors,1421.0,996.79,77,13
+55,Sports & Outdoors Item #55,Sports & Outdoors,761.53,318.27,87,14
+56,Electronics Item #56,Electronics,1149.45,554.9,247,6
+57,Home & Kitchen Item #57,Home & Kitchen,1004.76,718.61,31,18
+58,Beauty & Care Item #58,Beauty & Care,1496.95,844.08,18,36
+59,Clothing Item #59,Clothing,932.93,445.51,220,13
+60,Sports & Outdoors Item #60,Sports & Outdoors,691.63,490.1,181,12
+61,Clothing Item #61,Clothing,864.48,631.51,324,33
+62,Beauty & Care Item #62,Beauty & Care,1029.35,471.81,384,26
+63,Home & Kitchen Item #63,Home & Kitchen,818.73,490.98,378,20
+64,Electronics Item #64,Electronics,575.33,431.48,340,14
+65,Books Item #65,Books,774.53,370.6,383,50
+66,Home & Kitchen Item #66,Home & Kitchen,806.84,465.11,224,28
+67,Beauty & Care Item #67,Beauty & Care,594.12,455.05,58,13
+68,Sports & Outdoors Item #68,Sports & Outdoors,1262.01,1005.68,488,31
+69,Sports & Outdoors Item #69,Sports & Outdoors,1260.86,680.16,172,15
+70,Electronics Item #70,Electronics,167.06,113.37,315,26
+71,Clothing Item #71,Clothing,127.83,94.93,181,29
+72,Toys & Games Item #72,Toys & Games,592.05,406.65,360,26
+73,Sports & Outdoors Item #73,Sports & Outdoors,671.01,296.47,147,9
+74,Electronics Item #74,Electronics,1496.1,1094.73,321,14
+75,Beauty & Care Item #75,Beauty & Care,809.23,596.22,44,5
+76,Home & Kitchen Item #76,Home & Kitchen,261.14,126.65,332,47
+77,Home & Kitchen Item #77,Home & Kitchen,943.71,473.18,327,30
+78,Home & Kitchen Item #78,Home & Kitchen,1036.46,562.88,191,7
+79,Toys & Games Item #79,Toys & Games,756.84,400.55,286,38
+80,Home & Kitchen Item #80,Home & Kitchen,904.92,671.74,496,45
+81,Toys & Games Item #81,Toys & Games,1044.87,436.29,303,8
+82,Home & Kitchen Item #82,Home & Kitchen,368.06,262.68,253,37
+83,Sports & Outdoors Item #83,Sports & Outdoors,814.42,523.21,305,23
+84,Sports & Outdoors Item #84,Sports & Outdoors,964.33,595.85,465,24
+85,Toys & Games Item #85,Toys & Games,427.13,171.04,29,14
+86,Toys & Games Item #86,Toys & Games,588.37,413.26,27,41
+87,Beauty & Care Item #87,Beauty & Care,555.03,290.27,186,48
+88,Beauty & Care Item #88,Beauty & Care,207.8,164.24,279,41
+89,Sports & Outdoors Item #89,Sports & Outdoors,37.53,28.74,417,36
+90,Books Item #90,Books,753.17,316.66,499,37
+91,Electronics Item #91,Electronics,501.28,204.52,306,19
+92,Clothing Item #92,Clothing,312.23,173.27,474,34
+93,Books Item #93,Books,100.31,45.79,262,42
+94,Clothing Item #94,Clothing,536.59,330.7,61,50
+95,Toys & Games Item #95,Toys & Games,224.87,165.34,239,42
+96,Beauty & Care Item #96,Beauty & Care,164.9,80.76,201,19
+97,Clothing Item #97,Clothing,218.45,118.62,397,40
+98,Sports & Outdoors Item #98,Sports & Outdoors,1174.53,831.81,409,49
+99,Electronics Item #99,Electronics,462.71,199.7,98,36
+100,Home & Kitchen Item #100,Home & Kitchen,274.22,120.35,353,12
+101,Electronics Item #101,Electronics,1119.18,789.17,481,25
+102,Home & Kitchen Item #102,Home & Kitchen,980.55,513.82,481,37
+103,Toys & Games Item #103,Toys & Games,532.28,243.94,162,31
+104,Beauty & Care Item #104,Beauty & Care,119.05,79.94,46,29
+105,Toys & Games Item #105,Toys & Games,805.74,605.95,263,11
+106,Clothing Item #106,Clothing,1336.14,793.46,307,36
+107,Clothing Item #107,Clothing,32.03,20.75,332,26
+108,Electronics Item #108,Electronics,1061.28,693.77,413,30
+109,Electronics Item #109,Electronics,675.82,504.23,98,8
+110,Home & Kitchen Item #110,Home & Kitchen,69.19,45.25,491,48
+111,Toys & Games Item #111,Toys & Games,454.55,233.42,483,6
+112,Electronics Item #112,Electronics,245.72,142.02,185,32
+113,Beauty & Care Item #113,Beauty & Care,1489.62,1122.75,115,46
+114,Toys & Games Item #114,Toys & Games,472.47,264.57,150,26
+115,Home & Kitchen Item #115,Home & Kitchen,1238.02,537.2,317,6
+116,Home & Kitchen Item #116,Home & Kitchen,365.85,279.84,280,32
+117,Sports & Outdoors Item #117,Sports & Outdoors,1308.9,747.57,234,27
+118,Books Item #118,Books,447.26,339.08,424,37
+119,Toys & Games Item #119,Toys & Games,1008.99,558.09,115,14
+120,Electronics Item #120,Electronics,857.23,522.2,58,31
+121,Sports & Outdoors Item #121,Sports & Outdoors,1260.26,600.18,462,42
+122,Sports & Outdoors Item #122,Sports & Outdoors,993.04,397.88,278,35
+123,Toys & Games Item #123,Toys & Games,59.51,41.8,204,12
+124,Sports & Outdoors Item #124,Sports & Outdoors,709.73,557.34,411,45
+125,Beauty & Care Item #125,Beauty & Care,253.76,172.3,126,44
+126,Clothing Item #126,Clothing,407.14,226.36,285,19
+127,Electronics Item #127,Electronics,464.19,313.76,208,22
+128,Clothing Item #128,Clothing,507.44,208.82,424,38
+129,Beauty & Care Item #129,Beauty & Care,271.87,124.12,145,45
+130,Clothing Item #130,Clothing,940.1,689.75,231,45
+131,Beauty & Care Item #131,Beauty & Care,464.68,319.44,239,48
+132,Toys & Games Item #132,Toys & Games,741.03,577.75,137,36
+133,Clothing Item #133,Clothing,391.01,294.6,375,50
+134,Clothing Item #134,Clothing,910.63,600.75,136,19
+135,Clothing Item #135,Clothing,465.6,187.23,211,9
+136,Sports & Outdoors Item #136,Sports & Outdoors,610.32,394.11,157,30
+137,Electronics Item #137,Electronics,542.79,344.89,476,14
+138,Books Item #138,Books,385.91,211.62,483,28
+139,Beauty & Care Item #139,Beauty & Care,1056.46,683.59,351,38
+140,Clothing Item #140,Clothing,579.71,442.08,463,32
+141,Beauty & Care Item #141,Beauty & Care,878.67,421.66,123,45
+142,Toys & Games Item #142,Toys & Games,788.28,552.42,89,26
+143,Sports & Outdoors Item #143,Sports & Outdoors,1396.85,662.33,452,30
+144,Clothing Item #144,Clothing,134.22,77.44,253,32
+145,Electronics Item #145,Electronics,456.6,236.9,162,14
+146,Home & Kitchen Item #146,Home & Kitchen,171.75,78.76,356,31
+147,Home & Kitchen Item #147,Home & Kitchen,569.06,323.77,455,30
+148,Electronics Item #148,Electronics,392.01,203.36,23,6
+149,Books Item #149,Books,248.7,145.54,211,29
+150,Beauty & Care Item #150,Beauty & Care,25.23,19.35,406,50
+151,Clothing Item #151,Clothing,116.94,56.96,370,35
+152,Toys & Games Item #152,Toys & Games,798.1,466.79,254,29
+153,Books Item #153,Books,1191.91,764.38,124,36
+154,Books Item #154,Books,1094.49,836.63,104,24
+155,Toys & Games Item #155,Toys & Games,1120.51,849.15,96,35
+156,Sports & Outdoors Item #156,Sports & Outdoors,474.72,321.25,100,39
+157,Beauty & Care Item #157,Beauty & Care,742.44,419.4,480,11
+158,Clothing Item #158,Clothing,1133.56,682.25,228,11
+159,Clothing Item #159,Clothing,426.58,292.46,323,40
+160,Books Item #160,Books,677.96,425.01,442,23
+161,Beauty & Care Item #161,Beauty & Care,1486.04,1094.47,47,42
+162,Home & Kitchen Item #162,Home & Kitchen,1042.61,432.55,371,40
+163,Electronics Item #163,Electronics,274.49,160.09,215,10
+164,Beauty & Care Item #164,Beauty & Care,25.92,19.83,296,32
+165,Books Item #165,Books,1251.55,594.55,175,38
+166,Books Item #166,Books,759.94,384.87,46,6
+167,Books Item #167,Books,1277.69,652.08,48,29
+168,Home & Kitchen Item #168,Home & Kitchen,1374.86,888.53,332,49
+169,Toys & Games Item #169,Toys & Games,1176.22,818.26,466,25
+170,Electronics Item #170,Electronics,1395.57,572.53,144,12
+171,Home & Kitchen Item #171,Home & Kitchen,1189.38,714.73,383,35
+172,Sports & Outdoors Item #172,Sports & Outdoors,637.42,446.44,247,35
+173,Electronics Item #173,Electronics,179.24,139.51,202,13
+174,Electronics Item #174,Electronics,1328.56,611.65,132,17
+175,Books Item #175,Books,197.0,156.99,214,28
+176,Toys & Games Item #176,Toys & Games,373.73,233.18,116,35
+177,Sports & Outdoors Item #177,Sports & Outdoors,893.42,695.17,363,13
+178,Clothing Item #178,Clothing,498.37,371.32,197,46
+179,Electronics Item #179,Electronics,252.4,200.08,169,28
+180,Sports & Outdoors Item #180,Sports & Outdoors,1201.67,871.13,122,50
+181,Sports & Outdoors Item #181,Sports & Outdoors,537.49,344.65,196,13
+182,Home & Kitchen Item #182,Home & Kitchen,1227.31,514.5,445,7
+183,Electronics Item #183,Electronics,423.56,222.96,54,6
+184,Beauty & Care Item #184,Beauty & Care,604.74,334.12,218,5
+185,Home & Kitchen Item #185,Home & Kitchen,838.67,350.32,171,41
+186,Clothing Item #186,Clothing,965.57,467.78,337,46
+187,Sports & Outdoors Item #187,Sports & Outdoors,136.98,109.28,330,37
+188,Clothing Item #188,Clothing,252.98,197.01,433,36
+189,Electronics Item #189,Electronics,261.15,115.67,287,29
+190,Books Item #190,Books,1456.62,1059.35,92,39
+191,Sports & Outdoors Item #191,Sports & Outdoors,1004.08,682.99,278,10
+192,Home & Kitchen Item #192,Home & Kitchen,925.69,594.65,476,27
+193,Books Item #193,Books,1291.81,821.32,446,11
+194,Toys & Games Item #194,Toys & Games,1073.46,666.37,498,28
+195,Home & Kitchen Item #195,Home & Kitchen,1016.87,631.42,106,29
+196,Toys & Games Item #196,Toys & Games,139.22,99.18,171,20
+197,Sports & Outdoors Item #197,Sports & Outdoors,338.42,263.77,208,45
+198,Toys & Games Item #198,Toys & Games,1162.26,597.36,110,23
+199,Books Item #199,Books,1054.38,518.21,129,23
+200,Beauty & Care Item #200,Beauty & Care,221.14,171.84,248,40
+201,Beauty & Care Item #201,Beauty & Care,1166.79,845.82,420,30
+202,Books Item #202,Books,1100.46,821.64,65,26
+203,Home & Kitchen Item #203,Home & Kitchen,604.43,397.75,467,31
+204,Electronics Item #204,Electronics,898.42,496.97,353,8
+205,Home & Kitchen Item #205,Home & Kitchen,663.72,396.48,229,31
+206,Electronics Item #206,Electronics,1146.01,793.98,48,35
+207,Sports & Outdoors Item #207,Sports & Outdoors,244.79,190.95,205,11
+208,Toys & Games Item #208,Toys & Games,1286.45,900.0,251,19
+209,Electronics Item #209,Electronics,684.19,525.72,378,6
+210,Clothing Item #210,Clothing,690.02,413.47,374,49
+211,Clothing Item #211,Clothing,1417.8,1078.95,113,5
+212,Electronics Item #212,Electronics,1237.44,939.3,228,44
+213,Toys & Games Item #213,Toys & Games,1303.88,680.51,440,28
+214,Toys & Games Item #214,Toys & Games,1175.6,541.95,253,23
+215,Toys & Games Item #215,Toys & Games,564.11,314.0,294,42
+216,Beauty & Care Item #216,Beauty & Care,823.68,417.24,421,40
+217,Books Item #217,Books,847.44,619.25,441,19
+218,Beauty & Care Item #218,Beauty & Care,840.6,560.79,461,38
+219,Home & Kitchen Item #219,Home & Kitchen,168.46,87.85,248,41
+220,Home & Kitchen Item #220,Home & Kitchen,1497.83,1166.7,425,34
+221,Clothing Item #221,Clothing,833.85,355.43,334,32
+222,Beauty & Care Item #222,Beauty & Care,683.46,530.17,250,46
+223,Clothing Item #223,Clothing,798.83,429.38,227,10
+224,Clothing Item #224,Clothing,976.88,439.64,414,45
+225,Clothing Item #225,Clothing,1286.45,917.6,456,30
+226,Clothing Item #226,Clothing,896.3,390.89,374,45
+227,Toys & Games Item #227,Toys & Games,933.04,663.8,265,18
+228,Toys & Games Item #228,Toys & Games,1235.04,716.74,277,34
+229,Beauty & Care Item #229,Beauty & Care,1044.58,570.96,474,31
+230,Home & Kitchen Item #230,Home & Kitchen,1477.79,886.39,283,10
+231,Beauty & Care Item #231,Beauty & Care,1402.63,761.01,126,22
+232,Electronics Item #232,Electronics,875.61,387.97,334,41
+233,Beauty & Care Item #233,Beauty & Care,930.27,659.46,439,27
+234,Electronics Item #234,Electronics,139.69,83.0,224,18
+235,Toys & Games Item #235,Toys & Games,1202.99,876.28,39,31
+236,Electronics Item #236,Electronics,237.02,98.11,61,29
+237,Toys & Games Item #237,Toys & Games,1183.99,560.07,324,31
+238,Sports & Outdoors Item #238,Sports & Outdoors,1442.48,1109.83,93,34
+239,Toys & Games Item #239,Toys & Games,1485.32,1008.07,436,20
+240,Clothing Item #240,Clothing,270.9,196.19,204,18
+241,Books Item #241,Books,307.18,192.23,417,38
+242,Clothing Item #242,Clothing,463.83,263.53,266,9
+243,Toys & Games Item #243,Toys & Games,198.22,82.95,230,35
+244,Sports & Outdoors Item #244,Sports & Outdoors,1035.68,600.17,226,34
+245,Electronics Item #245,Electronics,1486.86,1168.72,309,10
+246,Beauty & Care Item #246,Beauty & Care,459.57,314.99,422,5
+247,Electronics Item #247,Electronics,244.94,178.96,288,18
+248,Beauty & Care Item #248,Beauty & Care,1153.96,806.95,140,48
+249,Home & Kitchen Item #249,Home & Kitchen,446.08,335.18,205,22
+250,Books Item #250,Books,50.61,34.13,189,7
+251,Electronics Item #251,Electronics,652.97,442.76,211,27
+252,Clothing Item #252,Clothing,827.49,630.44,35,7
+253,Home & Kitchen Item #253,Home & Kitchen,498.4,292.95,344,37
+254,Books Item #254,Books,805.61,580.18,326,16
+255,Clothing Item #255,Clothing,235.76,106.19,388,8
+256,Electronics Item #256,Electronics,1156.2,891.13,187,48
+257,Sports & Outdoors Item #257,Sports & Outdoors,1354.5,892.19,166,46
+258,Electronics Item #258,Electronics,452.39,205.48,38,10
+259,Sports & Outdoors Item #259,Sports & Outdoors,990.85,397.33,480,23
+260,Clothing Item #260,Clothing,11.9,6.56,385,40
+261,Books Item #261,Books,1273.49,597.51,483,36
+262,Electronics Item #262,Electronics,428.06,295.26,223,38
+263,Books Item #263,Books,966.61,397.29,348,50
+264,Beauty & Care Item #264,Beauty & Care,841.47,605.66,322,29
+265,Clothing Item #265,Clothing,195.32,152.79,257,11
+266,Clothing Item #266,Clothing,360.47,182.43,366,26
+267,Sports & Outdoors Item #267,Sports & Outdoors,346.68,261.03,422,28
+268,Sports & Outdoors Item #268,Sports & Outdoors,917.72,367.92,390,48
+269,Beauty & Care Item #269,Beauty & Care,1085.44,610.61,222,27
+270,Sports & Outdoors Item #270,Sports & Outdoors,1226.4,540.48,125,32
+271,Toys & Games Item #271,Toys & Games,617.49,287.43,399,14
+272,Toys & Games Item #272,Toys & Games,1256.74,775.75,452,9
+273,Beauty & Care Item #273,Beauty & Care,51.09,22.49,449,6
+274,Beauty & Care Item #274,Beauty & Care,1050.24,430.39,302,29
+275,Toys & Games Item #275,Toys & Games,361.97,227.84,258,40
+276,Clothing Item #276,Clothing,1340.49,820.2,46,49
+277,Home & Kitchen Item #277,Home & Kitchen,600.82,422.31,395,40
+278,Clothing Item #278,Clothing,397.5,229.58,17,34
+279,Sports & Outdoors Item #279,Sports & Outdoors,1038.83,541.23,116,24
+280,Home & Kitchen Item #280,Home & Kitchen,434.83,193.57,249,28
+281,Books Item #281,Books,649.57,359.99,435,43
+282,Books Item #282,Books,286.88,140.29,130,42
+283,Clothing Item #283,Clothing,934.62,377.55,479,48
+284,Toys & Games Item #284,Toys & Games,885.03,640.75,52,7
+285,Toys & Games Item #285,Toys & Games,299.53,216.01,210,26
+286,Toys & Games Item #286,Toys & Games,1209.52,825.57,294,34
+287,Clothing Item #287,Clothing,573.95,338.86,27,49
+288,Home & Kitchen Item #288,Home & Kitchen,991.59,685.94,327,19
+289,Toys & Games Item #289,Toys & Games,791.0,384.1,357,8
+290,Sports & Outdoors Item #290,Sports & Outdoors,37.61,20.18,271,10
+291,Books Item #291,Books,1001.45,588.9,105,43
+292,Toys & Games Item #292,Toys & Games,132.86,103.2,15,22
+293,Clothing Item #293,Clothing,1171.6,484.15,500,40
+294,Home & Kitchen Item #294,Home & Kitchen,882.71,625.61,91,35
+295,Clothing Item #295,Clothing,175.47,123.88,234,30
+296,Home & Kitchen Item #296,Home & Kitchen,1304.79,778.32,105,16
+297,Home & Kitchen Item #297,Home & Kitchen,170.13,102.8,483,26
+298,Beauty & Care Item #298,Beauty & Care,45.25,22.6,443,38
+299,Home & Kitchen Item #299,Home & Kitchen,196.04,85.94,356,41
+300,Home & Kitchen Item #300,Home & Kitchen,1209.57,764.92,319,45
+301,Beauty & Care Item #301,Beauty & Care,288.28,136.22,309,16
+302,Beauty & Care Item #302,Beauty & Care,1314.37,659.71,448,21
+303,Electronics Item #303,Electronics,1078.4,603.89,484,10
+304,Toys & Games Item #304,Toys & Games,524.94,342.17,365,13
+305,Clothing Item #305,Clothing,88.49,56.31,433,29
+306,Beauty & Care Item #306,Beauty & Care,1016.14,739.41,207,9
+307,Sports & Outdoors Item #307,Sports & Outdoors,290.3,225.04,96,27
+308,Toys & Games Item #308,Toys & Games,1321.72,892.77,70,23
+309,Clothing Item #309,Clothing,273.03,117.33,68,50
+310,Books Item #310,Books,263.99,142.56,386,8
+311,Toys & Games Item #311,Toys & Games,522.66,316.05,38,38
+312,Beauty & Care Item #312,Beauty & Care,67.01,37.9,423,33
+313,Sports & Outdoors Item #313,Sports & Outdoors,13.13,7.85,66,17
+314,Home & Kitchen Item #314,Home & Kitchen,343.7,208.73,167,33
+315,Toys & Games Item #315,Toys & Games,302.41,239.83,89,8
+316,Beauty & Care Item #316,Beauty & Care,1488.42,871.78,392,19
+317,Books Item #317,Books,552.09,390.09,307,16
+318,Home & Kitchen Item #318,Home & Kitchen,722.48,431.32,105,35
+319,Toys & Games Item #319,Toys & Games,984.67,620.45,317,5
+320,Beauty & Care Item #320,Beauty & Care,400.06,228.91,304,44
+321,Sports & Outdoors Item #321,Sports & Outdoors,1136.91,822.7,46,9
+322,Beauty & Care Item #322,Beauty & Care,661.9,506.8,342,19
+323,Books Item #323,Books,86.28,58.75,380,9
+324,Books Item #324,Books,738.86,409.69,363,35
+325,Clothing Item #325,Clothing,1227.81,517.39,84,23
+326,Electronics Item #326,Electronics,66.41,30.96,92,11
+327,Electronics Item #327,Electronics,806.41,326.84,115,16
+328,Electronics Item #328,Electronics,1148.7,902.53,306,10
+329,Home & Kitchen Item #329,Home & Kitchen,1067.05,698.84,438,41
+330,Clothing Item #330,Clothing,808.51,592.44,140,9
+331,Toys & Games Item #331,Toys & Games,500.99,369.24,56,48
+332,Electronics Item #332,Electronics,1063.14,644.75,95,19
+333,Electronics Item #333,Electronics,727.82,358.44,127,42
+334,Books Item #334,Books,222.58,137.2,251,16
+335,Sports & Outdoors Item #335,Sports & Outdoors,681.13,398.14,117,7
+336,Home & Kitchen Item #336,Home & Kitchen,219.65,108.28,250,47
+337,Books Item #337,Books,761.45,311.43,310,5
+338,Electronics Item #338,Electronics,1114.44,661.59,355,34
+339,Sports & Outdoors Item #339,Sports & Outdoors,646.08,299.08,245,34
+340,Beauty & Care Item #340,Beauty & Care,61.32,46.22,281,28
+341,Clothing Item #341,Clothing,565.92,417.0,403,42
+342,Sports & Outdoors Item #342,Sports & Outdoors,1480.89,703.85,278,25
+343,Toys & Games Item #343,Toys & Games,469.44,200.56,72,50
+344,Books Item #344,Books,944.37,476.4,285,48
+345,Beauty & Care Item #345,Beauty & Care,509.33,346.06,417,42
+346,Home & Kitchen Item #346,Home & Kitchen,386.6,300.84,353,19
+347,Clothing Item #347,Clothing,397.69,165.67,200,50
+348,Sports & Outdoors Item #348,Sports & Outdoors,982.34,767.76,415,26
+349,Electronics Item #349,Electronics,23.85,14.55,87,45
+350,Toys & Games Item #350,Toys & Games,164.11,71.95,10,38
+351,Beauty & Care Item #351,Beauty & Care,685.15,420.8,134,10
+352,Home & Kitchen Item #352,Home & Kitchen,906.71,591.54,412,43
+353,Books Item #353,Books,438.25,319.74,367,5
+354,Sports & Outdoors Item #354,Sports & Outdoors,1120.73,753.34,432,26
+355,Home & Kitchen Item #355,Home & Kitchen,754.13,451.24,265,26
+356,Clothing Item #356,Clothing,1419.5,998.51,290,12
+357,Beauty & Care Item #357,Beauty & Care,680.42,390.53,125,28
+358,Clothing Item #358,Clothing,202.78,119.36,50,50
+359,Electronics Item #359,Electronics,27.22,20.91,489,12
+360,Toys & Games Item #360,Toys & Games,646.41,288.09,321,38
+361,Sports & Outdoors Item #361,Sports & Outdoors,1306.76,773.78,409,23
+362,Books Item #362,Books,875.16,695.33,56,31
+363,Sports & Outdoors Item #363,Sports & Outdoors,1041.7,752.73,456,49
+364,Home & Kitchen Item #364,Home & Kitchen,1020.04,437.91,157,44
+365,Electronics Item #365,Electronics,1072.81,437.23,34,45
+366,Home & Kitchen Item #366,Home & Kitchen,1356.72,727.85,316,49
+367,Books Item #367,Books,440.01,277.37,102,20
+368,Beauty & Care Item #368,Beauty & Care,47.22,32.01,227,9
+369,Toys & Games Item #369,Toys & Games,1206.14,780.02,68,35
+370,Beauty & Care Item #370,Beauty & Care,414.79,251.79,453,23
+371,Clothing Item #371,Clothing,1455.75,676.29,449,31
+372,Toys & Games Item #372,Toys & Games,1375.21,805.34,316,18
+373,Electronics Item #373,Electronics,580.26,444.14,343,23
+374,Toys & Games Item #374,Toys & Games,1497.71,1145.67,362,42
+375,Electronics Item #375,Electronics,1157.88,685.14,108,26
+376,Sports & Outdoors Item #376,Sports & Outdoors,984.35,614.22,92,22
+377,Clothing Item #377,Clothing,500.84,321.03,469,28
+378,Electronics Item #378,Electronics,361.22,177.2,472,50
+379,Books Item #379,Books,1116.8,613.22,147,17
+380,Clothing Item #380,Clothing,374.6,191.17,300,19
+381,Home & Kitchen Item #381,Home & Kitchen,540.39,306.6,264,40
+382,Sports & Outdoors Item #382,Sports & Outdoors,1190.16,788.81,264,35
+383,Books Item #383,Books,1197.06,842.77,167,19
+384,Sports & Outdoors Item #384,Sports & Outdoors,1495.75,1110.53,267,37
+385,Sports & Outdoors Item #385,Sports & Outdoors,1021.76,466.62,443,12
+386,Beauty & Care Item #386,Beauty & Care,570.13,370.48,171,31
+387,Home & Kitchen Item #387,Home & Kitchen,1394.49,758.25,121,43
+388,Toys & Games Item #388,Toys & Games,1492.78,908.18,19,18
+389,Home & Kitchen Item #389,Home & Kitchen,735.54,569.46,215,24
+390,Beauty & Care Item #390,Beauty & Care,562.74,285.06,441,24
+391,Electronics Item #391,Electronics,632.55,384.02,314,42
+392,Beauty & Care Item #392,Beauty & Care,456.75,244.83,92,37
+393,Clothing Item #393,Clothing,601.36,296.4,454,45
+394,Sports & Outdoors Item #394,Sports & Outdoors,54.84,24.09,352,39
+395,Books Item #395,Books,270.54,178.64,300,39
+396,Beauty & Care Item #396,Beauty & Care,291.75,118.69,94,7
+397,Beauty & Care Item #397,Beauty & Care,53.47,28.96,229,45
+398,Beauty & Care Item #398,Beauty & Care,518.75,391.38,94,47
+399,Clothing Item #399,Clothing,810.01,540.12,218,8
+400,Electronics Item #400,Electronics,822.16,470.15,307,11
+401,Toys & Games Item #401,Toys & Games,373.43,273.07,382,32
+402,Beauty & Care Item #402,Beauty & Care,413.35,175.13,221,42
+403,Home & Kitchen Item #403,Home & Kitchen,1419.18,585.88,194,9
+404,Sports & Outdoors Item #404,Sports & Outdoors,1230.37,514.99,339,36
+405,Books Item #405,Books,369.56,153.12,423,12
+406,Sports & Outdoors Item #406,Sports & Outdoors,1179.83,614.45,245,23
+407,Electronics Item #407,Electronics,587.85,278.06,279,25
+408,Home & Kitchen Item #408,Home & Kitchen,615.54,473.53,124,19
+409,Books Item #409,Books,617.37,456.45,349,5
+410,Toys & Games Item #410,Toys & Games,1316.21,643.93,85,10
+411,Books Item #411,Books,949.65,629.66,465,11
+412,Electronics Item #412,Electronics,1281.16,601.8,283,41
+413,Electronics Item #413,Electronics,379.34,275.05,175,9
+414,Electronics Item #414,Electronics,241.0,104.68,19,27
+415,Beauty & Care Item #415,Beauty & Care,786.2,397.89,454,45
+416,Sports & Outdoors Item #416,Sports & Outdoors,635.28,267.14,180,29
+417,Clothing Item #417,Clothing,372.38,283.39,28,42
+418,Home & Kitchen Item #418,Home & Kitchen,693.46,482.89,372,33
+419,Books Item #419,Books,1424.28,869.76,381,22
+420,Clothing Item #420,Clothing,399.05,262.28,418,22
+421,Home & Kitchen Item #421,Home & Kitchen,763.94,492.13,142,30
+422,Toys & Games Item #422,Toys & Games,316.66,236.29,254,18
+423,Clothing Item #423,Clothing,337.22,136.22,124,5
+424,Home & Kitchen Item #424,Home & Kitchen,689.9,381.14,217,14
+425,Clothing Item #425,Clothing,433.79,286.68,197,20
+426,Beauty & Care Item #426,Beauty & Care,971.77,406.87,71,13
+427,Beauty & Care Item #427,Beauty & Care,794.2,517.53,55,42
+428,Home & Kitchen Item #428,Home & Kitchen,27.8,11.16,55,13
+429,Sports & Outdoors Item #429,Sports & Outdoors,522.49,219.77,349,37
+430,Electronics Item #430,Electronics,807.72,560.16,159,11
+431,Home & Kitchen Item #431,Home & Kitchen,585.76,331.8,223,46
+432,Clothing Item #432,Clothing,681.37,407.08,333,21
+433,Toys & Games Item #433,Toys & Games,1038.51,681.36,253,17
+434,Toys & Games Item #434,Toys & Games,1388.64,946.42,51,21
+435,Clothing Item #435,Clothing,566.87,281.03,174,27
+436,Beauty & Care Item #436,Beauty & Care,401.48,279.51,74,14
+437,Beauty & Care Item #437,Beauty & Care,807.78,552.2,244,30
+438,Books Item #438,Books,63.01,40.61,167,41
+439,Electronics Item #439,Electronics,867.57,664.26,56,46
+440,Clothing Item #440,Clothing,577.1,370.84,201,40
+441,Electronics Item #441,Electronics,559.5,290.39,288,28
+442,Sports & Outdoors Item #442,Sports & Outdoors,1239.21,643.03,39,24
+443,Sports & Outdoors Item #443,Sports & Outdoors,1496.01,1078.88,181,32
+444,Electronics Item #444,Electronics,832.6,461.8,198,22
+445,Beauty & Care Item #445,Beauty & Care,415.48,308.89,473,29
+446,Beauty & Care Item #446,Beauty & Care,1054.56,660.6,249,34
+447,Home & Kitchen Item #447,Home & Kitchen,559.16,428.1,400,9
+448,Clothing Item #448,Clothing,376.42,153.17,51,49
+449,Home & Kitchen Item #449,Home & Kitchen,208.92,134.74,461,23
+450,Electronics Item #450,Electronics,947.08,514.19,257,32
+451,Clothing Item #451,Clothing,894.43,647.69,97,6
+452,Electronics Item #452,Electronics,230.21,102.14,79,16
+453,Electronics Item #453,Electronics,892.23,436.29,99,16
+454,Electronics Item #454,Electronics,781.53,355.57,452,10
+455,Beauty & Care Item #455,Beauty & Care,902.39,597.05,247,34
+456,Beauty & Care Item #456,Beauty & Care,772.99,374.44,66,47
+457,Beauty & Care Item #457,Beauty & Care,366.78,212.13,116,7
+458,Beauty & Care Item #458,Beauty & Care,1057.29,518.45,262,11
+459,Beauty & Care Item #459,Beauty & Care,325.79,226.17,266,33
+460,Books Item #460,Books,388.55,232.72,475,42
+461,Home & Kitchen Item #461,Home & Kitchen,321.21,239.88,359,28
+462,Clothing Item #462,Clothing,488.2,257.53,136,25
+463,Home & Kitchen Item #463,Home & Kitchen,956.75,619.35,184,12
+464,Home & Kitchen Item #464,Home & Kitchen,412.68,325.1,137,31
+465,Electronics Item #465,Electronics,440.51,272.69,75,23
+466,Clothing Item #466,Clothing,13.39,8.25,160,40
+467,Toys & Games Item #467,Toys & Games,612.53,252.99,445,21
+468,Beauty & Care Item #468,Beauty & Care,187.07,145.34,163,14
+469,Home & Kitchen Item #469,Home & Kitchen,1122.23,846.45,35,41
+470,Toys & Games Item #470,Toys & Games,1019.24,643.75,137,36
+471,Home & Kitchen Item #471,Home & Kitchen,1052.3,662.52,34,11
+472,Home & Kitchen Item #472,Home & Kitchen,1434.96,1123.36,280,39
+473,Electronics Item #473,Electronics,1303.21,626.62,183,38
+474,Home & Kitchen Item #474,Home & Kitchen,505.16,272.22,331,25
+475,Beauty & Care Item #475,Beauty & Care,993.89,469.47,478,43
+476,Books Item #476,Books,522.53,309.89,443,21
+477,Books Item #477,Books,622.26,373.94,41,43
+478,Sports & Outdoors Item #478,Sports & Outdoors,537.61,399.99,290,20
+479,Home & Kitchen Item #479,Home & Kitchen,90.76,39.85,279,20
+480,Home & Kitchen Item #480,Home & Kitchen,468.88,193.21,244,28
+481,Home & Kitchen Item #481,Home & Kitchen,400.14,238.54,37,12
+482,Home & Kitchen Item #482,Home & Kitchen,274.34,210.56,183,6
+483,Clothing Item #483,Clothing,948.24,541.56,135,29
+484,Sports & Outdoors Item #484,Sports & Outdoors,345.13,142.95,458,11
+485,Electronics Item #485,Electronics,52.95,28.5,395,41
+486,Sports & Outdoors Item #486,Sports & Outdoors,71.37,46.44,492,45
+487,Home & Kitchen Item #487,Home & Kitchen,589.55,328.88,106,24
+488,Beauty & Care Item #488,Beauty & Care,873.62,356.65,226,31
+489,Toys & Games Item #489,Toys & Games,661.16,509.03,168,43
+490,Electronics Item #490,Electronics,628.73,469.28,201,25
+491,Books Item #491,Books,679.94,323.7,379,41
+492,Electronics Item #492,Electronics,398.81,213.19,161,17
+493,Books Item #493,Books,1499.51,1082.91,108,10
+494,Sports & Outdoors Item #494,Sports & Outdoors,1481.38,1178.52,118,9
+495,Beauty & Care Item #495,Beauty & Care,241.74,103.89,33,40
+496,Electronics Item #496,Electronics,185.14,145.46,30,18
+497,Sports & Outdoors Item #497,Sports & Outdoors,738.75,351.99,382,40
+498,Electronics Item #498,Electronics,1333.4,1038.53,389,36
+499,Toys & Games Item #499,Toys & Games,1435.57,919.56,430,38
+500,Electronics Item #500,Electronics,1289.71,872.52,292,33
