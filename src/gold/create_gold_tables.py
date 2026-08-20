@@ -118,21 +118,14 @@ def get_spark_session(app_name="Gold_Pipeline_Orchestrator"):
             return active
     except Exception:
         pass
-    try:
-        from pyspark.sql.classic.session import SparkSession as ClassicSparkSession
-        active_classic = ClassicSparkSession.getActiveSession()
-        if active_classic:
-            return active_classic
-    except Exception:
-        pass
+    for key in list(os.environ.keys()):
+        if "SPARK_REMOTE" in key or "SPARK_CONNECT" in key or "REMOTE" in key:
+            if not os.environ[key].startswith("sc://"):
+                os.environ.pop(key, None)
     builder = SparkSession.builder.appName(app_name)
     if "DATABRICKS_RUNTIME_VERSION" not in os.environ:
         builder = builder.master("local[*]")
-    try:
-        return builder.getOrCreate()
-    except Exception:
-        from pyspark.sql.classic.session import SparkSession as ClassicSparkSession
-        return ClassicSparkSession.builder.appName(app_name).getOrCreate()
+    return builder.getOrCreate()
 
 if __name__ == "__main__":
     spark = get_spark_session("Gold_Pipeline_Orchestrator")
