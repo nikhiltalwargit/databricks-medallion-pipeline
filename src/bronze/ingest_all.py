@@ -44,10 +44,11 @@ def get_spark_session(app_name="Bronze_Pipeline_Orchestrator"):
             return active
     except Exception:
         pass
-    for key in list(os.environ.keys()):
-        if "SPARK_REMOTE" in key or "SPARK_CONNECT" in key or "REMOTE" in key:
-            if not os.environ[key].startswith("sc://"):
-                os.environ.pop(key, None)
+    try:
+        from databricks.connect import DatabricksSession
+        return DatabricksSession.builder.appName(app_name).getOrCreate()
+    except Exception:
+        pass
     builder = SparkSession.builder.appName(app_name)
     if "DATABRICKS_RUNTIME_VERSION" not in os.environ:
         builder = builder.master("local[*]")
