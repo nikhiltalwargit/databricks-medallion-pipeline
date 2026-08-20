@@ -10,15 +10,27 @@ from pyspark.sql.types import StructType, StructField, IntegerType, StringType, 
 from pyspark.sql import functions as F
 
 def get_spark_session(app_name="Bronze_Ingest_Customers"):
-    active = SparkSession.getActiveSession()
-    if active:
-        return active
-    if "SPARK_REMOTE" in os.environ and not os.environ["SPARK_REMOTE"].startswith("sc://"):
-        os.environ.pop("SPARK_REMOTE", None)
+    try:
+        active = SparkSession.getActiveSession()
+        if active:
+            return active
+    except Exception:
+        pass
+    try:
+        from pyspark.sql.classic.session import SparkSession as ClassicSparkSession
+        active_classic = ClassicSparkSession.getActiveSession()
+        if active_classic:
+            return active_classic
+    except Exception:
+        pass
     builder = SparkSession.builder.appName(app_name)
     if "DATABRICKS_RUNTIME_VERSION" not in os.environ:
         builder = builder.master("local[*]")
-    return builder.getOrCreate()
+    try:
+        return builder.getOrCreate()
+    except Exception:
+        from pyspark.sql.classic.session import SparkSession as ClassicSparkSession
+        return ClassicSparkSession.builder.appName(app_name).getOrCreate()
 
 CUSTOMER_SCHEMA = StructType([
     StructField("customer_id", IntegerType(), True),

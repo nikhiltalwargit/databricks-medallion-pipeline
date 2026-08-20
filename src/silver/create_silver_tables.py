@@ -108,15 +108,27 @@ def run_silver_pipeline(spark, data_dir, warehouse_dir):
     return df_s_cust, df_s_prod, df_s_orders
 
 def get_spark_session(app_name="Silver_Pipeline_Orchestrator"):
-    active = SparkSession.getActiveSession()
-    if active:
-        return active
-    if "SPARK_REMOTE" in os.environ and not os.environ["SPARK_REMOTE"].startswith("sc://"):
-        os.environ.pop("SPARK_REMOTE", None)
+    try:
+        active = SparkSession.getActiveSession()
+        if active:
+            return active
+    except Exception:
+        pass
+    try:
+        from pyspark.sql.classic.session import SparkSession as ClassicSparkSession
+        active_classic = ClassicSparkSession.getActiveSession()
+        if active_classic:
+            return active_classic
+    except Exception:
+        pass
     builder = SparkSession.builder.appName(app_name)
     if "DATABRICKS_RUNTIME_VERSION" not in os.environ:
         builder = builder.master("local[*]")
-    return builder.getOrCreate()
+    try:
+        return builder.getOrCreate()
+    except Exception:
+        from pyspark.sql.classic.session import SparkSession as ClassicSparkSession
+        return ClassicSparkSession.builder.appName(app_name).getOrCreate()
 
 if __name__ == "__main__":
     spark = get_spark_session("Silver_Pipeline_Orchestrator")
