@@ -24,3 +24,8 @@
 - **Symptom:** `PySparkRuntimeError: [CANNOT_CONFIGURE_SPARK_CONNECT_MASTER] Spark Connect server and Spark master cannot be configured together` when executing PySpark scripts in Databricks.
 - **Root Cause:** Hardcoding `.master("local[*]")` on `SparkSession.builder` conflicted with Databricks pre-configured Spark Connect socket / active Spark session.
 - **Resolution:** Refactored `get_spark_session()` across all PySpark modules to check `SparkSession.getActiveSession()` first, and dynamically omit `.master("local[*]")` when running inside Databricks (`"DATABRICKS_RUNTIME_VERSION" in os.environ`).
+
+## Incident 6: Databricks Subshell SPARK_REMOTE Invalid Connect URL Error
+- **Symptom:** `PySparkValueError: [INVALID_CONNECT_URL] Invalid URL for Spark Connect: The URL must start with 'sc://'` when executing `!python` subshell commands in Databricks.
+- **Root Cause:** Databricks 14+ subshell magic populates `SPARK_REMOTE="unix:///databricks/sparkconnect/grpc.sock..."`. PySpark Connect client attempts to parse this unix socket URL as a standard `sc://` connection.
+- **Resolution:** Sanitized `get_spark_session()` across all PySpark scripts: if `SPARK_REMOTE` is present in `os.environ` and does not start with `sc://`, it is popped (`os.environ.pop("SPARK_REMOTE", None)`), enabling clean fallback to the cluster JVM Spark context.
