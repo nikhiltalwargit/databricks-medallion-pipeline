@@ -10,6 +10,12 @@ from pyspark.sql import functions as F
 
 def get_spark_session(app_name="Bronze_Ingest_Orders"):
     try:
+        active = SparkSession.getActiveSession()
+        if active:
+            return active
+    except Exception:
+        pass
+    try:
         from IPython import get_ipython
         ipy = get_ipython()
         if ipy and "spark" in ipy.user_ns:
@@ -17,27 +23,19 @@ def get_spark_session(app_name="Bronze_Ingest_Orders"):
     except Exception:
         pass
     try:
-        active = SparkSession.getActiveSession()
-        if active:
-            return active
-    except Exception:
-        pass
-    try:
         from databricks.connect import DatabricksSession
         return DatabricksSession.builder.getOrCreate()
     except Exception:
         pass
-    for k in list(os.environ.keys()):
-        if "SPARK_REMOTE" in k or "SPARK_CONNECT" in k or "SPARK_LOCAL_REMOTE" in k or k == "spark.remote":
-            os.environ.pop(k, None)
-    builder = SparkSession.builder.appName(app_name).config("spark.api.mode", "classic")
+    if "DATABRICKS_RUNTIME_VERSION" in os.environ:
+        for k in list(os.environ.keys()):
+            if "SPARK_REMOTE" in k or "SPARK_CONNECT" in k:
+                if not os.environ[k].startswith("sc://"):
+                    os.environ.pop(k, None)
+    builder = SparkSession.builder.appName(app_name)
     if "DATABRICKS_RUNTIME_VERSION" not in os.environ:
         builder = builder.master("local[*]")
-    try:
-        return builder.getOrCreate()
-    except Exception:
-        os.environ["SPARK_CONNECT_MODE_ENABLED"] = "0"
-        return SparkSession.builder.appName(app_name).config("spark.api.mode", "classic").getOrCreate()
+    return builder.getOrCreate()
 
 ORDER_SCHEMA = StructType([
     StructField("order_id", IntegerType(), True),
