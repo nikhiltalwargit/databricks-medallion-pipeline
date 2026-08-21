@@ -46,20 +46,27 @@ def get_spark_session(app_name="Bronze_Pipeline_Orchestrator"):
     except Exception:
         pass
     try:
-        from databricks.connect import DatabricksSession
-        return DatabricksSession.builder.getOrCreate()
-    except Exception:
-        pass
-    try:
         active = SparkSession.getActiveSession()
         if active:
             return active
     except Exception:
         pass
-    builder = SparkSession.builder.appName(app_name)
+    try:
+        from databricks.connect import DatabricksSession
+        return DatabricksSession.builder.getOrCreate()
+    except Exception:
+        pass
+    for k in list(os.environ.keys()):
+        if "SPARK_REMOTE" in k or "SPARK_CONNECT" in k or "SPARK_LOCAL_REMOTE" in k or k == "spark.remote":
+            os.environ.pop(k, None)
+    builder = SparkSession.builder.appName(app_name).config("spark.api.mode", "classic")
     if "DATABRICKS_RUNTIME_VERSION" not in os.environ:
         builder = builder.master("local[*]")
-    return builder.getOrCreate()
+    try:
+        return builder.getOrCreate()
+    except Exception:
+        os.environ["SPARK_CONNECT_MODE_ENABLED"] = "0"
+        return SparkSession.builder.appName(app_name).config("spark.api.mode", "classic").getOrCreate()
 
 if __name__ == "__main__":
     spark = get_spark_session("Bronze_Pipeline_Orchestrator")
